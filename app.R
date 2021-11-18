@@ -8,6 +8,7 @@ remove(list=ls())
 library(shiny)
 library(ggplot2)
 library(magrittr)
+library(dplyr)
 library(babynames)
 
 # ui portion
@@ -17,7 +18,7 @@ ui <- fluidPage(
     inputId = "name",
     label = "Name:",
     value = "",
-    placeholder = "e.g., Lisa"
+    placeholder = "enter name here"
   ),
   selectInput(
     inputId = "sex",
